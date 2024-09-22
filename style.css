@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+.wrapper{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+/* .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+.container{
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+
+}
+.button-option{
+    background: white;
+    height: 22vmin;
+    width: 22vmin;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #d161ff;
+    font-size: 12vmin;
+    font-weight: bold;
+    transition: color 0.9s ease;
+}
+.restart,
+.new-game{
+    width: 22vmin;
+    height: 11vmin;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    /* center */
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+}
+.popup{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.x-color {
+    color: #ff6347; /* Example color for X */
+}
+
+.o-color {
+    color: #6495ed; /* Example color for O */
+}
